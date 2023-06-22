@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Faiz Manga</title>
+  <meta name="description" content="Mon Univers Manga Decouvrer tous mes mangas préférés">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"> <span>Faïz</span> Manga</a>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#a-propos">à propos</a></li>
+      <li><input type="checkbox" onclick="darkmode()">
+        <i id="moon-icon" class="fas fa-moon"></i>
+        </input>
+      </li>
+    </ul>
+    <a href="#" class="btn-acheter">Acheter Maintenant</a>
+
+    <div class="responsive-menu"></div>
+  </header>
+  <!-- accueil section -->
+  <section id="home">
+    <h4>Mon Univers Manga</h4>
+    <p>Decouvrer tous mes mangas préférés.</p>
+    <a href="#" class="btn-acheter home-btn"> Acheter Maintenant</a>
+  </section>
+
+
+
+  </section>
+
+  <!-- section  -->
+  <section id="popular-manga">
+    <h1 class="title">Mangas Favoris</h1>
+    <div class="content">
+      <!-- box -->
+      <div class="box">
+        <img src="images/hxh.jpeg" alt="">
+        <div class="content">
+          <div>
+            <h4>Hunter x Hunter</h4>
+            <p>Gon Freecss a douze ans, et rêve de devenir hunter (chasseur en anglais). Les hunters sont des citoyens
+              d'élite autorisés à faire quasiment tout ce qu'ils souhaitent sur simple présentation de leur licence</p>
+            <p>Son père, Ging Freecss, qu'il ne connaît pas directement, est considéré comme un des plus grands hunters
+              de son temps. C'est aussi pour le retrouver que Gon veut devenir hunter.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <!-- box -->
+      <div class="box">
+        <img src="images/naruto.jpg" alt="">
+        <div class="content">
+          <div>
+            <h4>Naruto</h4>
+            <p>L'histoire commence pendant l'adolescence de Naruto, vers ses douze ans. Orphelin cancre et grand
+              farceur,</p>
+            <p>Son rêve : devenir le meilleur Hokage afin d'être reconnu par les habitants de son village.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <!-- box -->
+      <div class="box">
+        <img src="images/OnePiece.jpg" alt="">
+        <div class="content">
+          <div>
+            <h4>One Piece</h4>
+            <p>L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du
+              caoutchouc après avoir mangé par inadvertance un fruit du démon.</p>
+            <p>Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de
+              devenir le prochain roi des pirates.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <!-- box -->
+      <div class="box">
+        <img src="images/Bleach.jpg" alt="">
+        <div class="content">
+          <div>
+            <h4>Bleach</h4>
+            <p>Ichigo Kurosaki, lycéen de 15 ans, arrive à voir, entendre et toucher les âmes des morts depuis qu'il est
+              tout petit.</p>
+            <p> Un soir, sa routine quotidienne vient à être bouleversée à la suite de sa rencontre avec une shinigami,
+              Rukia Kuchiki, et la venue d'un monstre appelé hollow.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <!-- box -->
+      <div class="box">
+        <img src="images/snk.jpg" alt="">
+        <div class="content">
+          <div>
+            <h4>Attaque Des Titans</h4>
+            <p>Eren Jäger, alors un petit garçon d'environ 13 ans, mène une existence paisible avec ses parents et sa
+              sœur adoptive Mikasa à Shiganshina, une ville au bord du mur Maria,</p>
+            <p>Mais, alors que les humains n'ont pas aperçu de Titans aux abords du district depuis plus d'un siècle, la
+              ville est attaquée par un Titan de 60 mètres qui ouvre une brèche dans le mur contre la ville.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <!-- box -->
+      <div class="box">
+        <img src="images/blackclover.jpg" alt="">
+        <div class="content">
+          <div>
+            <h4>Black Clover</h4>
+            <p>Asta est un jeune garçon déterminé qui vit avec son ami d’enfance, Yuno, dans un orphelinat du royaume de
+              Clover. Depuis tout petit, Asta a pour ambition de devenir le magicien le plus puissant du royaume,
+              "l’Empereur-Mage", ce qui a aussi inspiré Yuno à vouloir la même chose.</p>
+            <p> Mais malheureusement, Asta est né sans aucun talent magique, alors que Yuno possède des prédispositions
+              spectaculaires.</p>
+            <a href="#">Lire Plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+    </div>
+  </section>
+
+  <!-- A propos section -->
+  <section id="a-propos">
+    <h1 class="title">à propos</h1>
+
+    <footer>
+      <p> Réalisé par <span>Faïz</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+      var toggle_menu = document.querySelector('.responsive-menu');
+      var menu = document.querySelector('.menu');
+      toggle_menu.onclick = function () {
+        toggle_menu.classList.toggle('active');
+        menu.classList.toggle('responsive')
+      }
+
+      function darkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
+
+</body>
+
+</html>
