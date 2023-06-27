@@ -7,6 +7,7 @@
   <meta name="description" content="Mon Univers Manga Decouvrer tous mes mangas préférés">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
   <!-- accueil section -->
   <section id="home">
     <h4>Mon Univers Manga</h4>
-    <p>Decouvrer tous mes mangas préférés.</p>
+    <p id="p1">Decouvrer tous mes mangas préférés.</p>
     <a href="#" class="btn-acheter home-btn"> Acheter Maintenant</a>
   </section>
 
@@ -142,21 +143,10 @@
     <footer>
       <p> Réalisé par <span>Faïz</span> | Tous les droits sont réservés.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 
+    <script src="script.js"></script>
 
-    <script>
-      var toggle_menu = document.querySelector('.responsive-menu');
-      var menu = document.querySelector('.menu');
-      toggle_menu.onclick = function () {
-        toggle_menu.classList.toggle('active');
-        menu.classList.toggle('responsive')
-      }
-
-      function darkmode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
-    </script>
 
 
 </body>
